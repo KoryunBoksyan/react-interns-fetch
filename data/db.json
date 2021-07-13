@@ -1,0 +1,97 @@
+{
+  "interns": [
+    {
+      "id": "1",
+      "firstName": "Ashot",
+      "lastName": "Sargsyan",
+      "email": "ashot@gmaul.com"
+    },
+    {
+      "id": "2",
+      "firstName": "Eduard",
+      "lastName": "Manukyan",
+      "email": "eduard@gmail.com"
+    },
+    {
+      "id": "3",
+      "firstName": "Emilia",
+      "lastName": "Babajanyan",
+      "email": "emilia@gmail.com"
+    },
+    {
+      "id": "4",
+      "firstName": "Frunz",
+      "lastName": "Grigoryan",
+      "email": "frunz@gmail.com"
+    },
+    {
+      "id": "5",
+      "firstName": "Gago",
+      "lastName": "Simonyan",
+      "email": "gago@gmail.com"
+    },
+    {
+      "id": "6",
+      "firstName": "Ghevond",
+      "lastName": "Tunyan",
+      "email": "ghevond@gmail.com"
+    },
+    {
+      "firstName": "Gor",
+      "lastName": "Melqonyan",
+      "email": "gor@gmail.com",
+      "id": "7"
+    },
+    {
+      "id": "8",
+      "firstName": "Hovhannes",
+      "lastName": "Petrosyan",
+      "email": "hovhannes@gmail.com"
+    },
+    {
+      "id": "9",
+      "firstName": "Koryun",
+      "lastName": "Boksyan",
+      "email": "koryun@gmail.com"
+    },
+    {
+      "id": "10",
+      "firstName": "Manuk",
+      "lastName": "Manukyan",
+      "email": "manuk@gmail.com"
+    },
+    {
+      "id": "11",
+      "firstName": "Melik",
+      "lastName": "Grigoryna",
+      "email": "melik@gmail.com"
+    },
+    {
+      "id": "12",
+      "firstName": "Nare",
+      "lastName": "Khachatryan",
+      "email": "nare@gmail.com"
+    },
+    {
+      "id": "13",
+      "firstName": "Robert",
+      "lastName": "Hovhannisyan",
+      "email": "obert@gmail.com"
+    },
+    {
+      "firstName": "Koryun",
+      "lastName": "koryun",
+      "email": "koryunboksyan@gmail.com",
+      "id": "OSprj_T"
+    }
+  ],
+  "courses": [
+    {
+      "id": "1",
+      "firstName": "Maximilian",
+      "lastName": "Schwarzmüller",
+      "title": "NodeJS - The Complete Guide",
+      "price": "13,99"
+    }
+  ]
+}
