@@ -60,7 +60,7 @@ class AddModal extends Component {
             X
           </span>
           <form onSubmit={this.handleSave}>
-            <h2>{title}</h2>
+            <h2>{title ? title : "Intern"}</h2>
             <input
               type="text"
               name="firstName"

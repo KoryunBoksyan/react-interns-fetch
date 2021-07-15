@@ -79,7 +79,6 @@ class Interns extends Component {
                 <hr />
                 {isAddModal && (
                     <AddModal
-                        title="ADD_MODAL"
                         handleIsOpenAddModal={this.handleIsOpenAddModal}
                         intern={interns.find(intern => intern.id === this.state.activeInternID)}
                         fetchInterns={this.fetchInterns}
@@ -98,7 +97,7 @@ class Interns extends Component {
 
                 {!!this.state.deleteInternId && (
                     <DeleteModal
-                        title="DELETE_MODAL"
+                        title="DELETE MODAL"
                         handleDeleteModal={this.handleDeleteModal}
                         intern={interns.find(intern => intern.id === this.state.deleteInternId)}
                         fetchInterns={this.fetchInterns}
