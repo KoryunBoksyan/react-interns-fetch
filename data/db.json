@@ -1,10 +1,10 @@
 {
   "interns": [
     {
-      "id": "1",
       "firstName": "Ashot",
       "lastName": "Sargsyan",
-      "email": "ashot@gmaul.com"
+      "email": "ashot@gmaul.com",
+      "id": "1"
     },
     {
       "id": "2",
@@ -31,12 +31,6 @@
       "email": "gago@gmail.com"
     },
     {
-      "id": "6",
-      "firstName": "Ghevond",
-      "lastName": "Tunyan",
-      "email": "ghevond@gmail.com"
-    },
-    {
       "firstName": "Gor",
       "lastName": "Melqonyan",
       "email": "gor@gmail.com",
@@ -49,10 +43,10 @@
       "email": "hovhannes@gmail.com"
     },
     {
-      "id": "9",
       "firstName": "Koryun",
       "lastName": "Boksyan",
-      "email": "koryun@gmail.com"
+      "email": "koryun@gmail.com",
+      "id": "9"
     },
     {
       "id": "10",
@@ -73,16 +67,10 @@
       "email": "nare@gmail.com"
     },
     {
-      "id": "13",
       "firstName": "Robert",
       "lastName": "Hovhannisyan",
-      "email": "obert@gmail.com"
-    },
-    {
-      "firstName": "Koryun",
-      "lastName": "koryun",
-      "email": "koryunboksyan@gmail.com",
-      "id": "OSprj_T"
+      "email": "Robert@gmail.com",
+      "id": "13"
     }
   ],
   "courses": [
@@ -92,6 +80,34 @@
       "lastName": "Schwarzmüller",
       "title": "NodeJS - The Complete Guide",
       "price": "13,99"
+    },
+    {
+      "id": "2",
+      "firstName": "Maxim",
+      "lastName": "Schwarzm",
+      "title": "JS - The Complete Guide",
+      "price": "17,99"
+    },
+    {
+      "id": "3",
+      "firstName": "Milian",
+      "lastName": "Müller",
+      "title": "ReactJS - The Complete Guide",
+      "price": "16,99"
+    },
+    {
+      "id": "4",
+      "firstName": "Max",
+      "lastName": "Schwarz",
+      "title": "Redux - The Complete Guide",
+      "price": "11,99"
+    },
+    {
+      "id": "5",
+      "firstName": "Joe",
+      "lastName": "Schmoe",
+      "title": "Typescript - The Complete Guide",
+      "price": "19,99"
     }
   ]
 }

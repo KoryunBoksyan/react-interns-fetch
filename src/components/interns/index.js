@@ -2,9 +2,12 @@ import React, {Component} from "react";
 import {API_URL} from "../../core/url";
 import AddModal from "./addModal";
 import DeleteModal from "./deleteModal";
+import Modal from "../courses/modal";
+
 
 export const END_POINT = {
     prefix : 'interns',
+    COURSES: "courses",
 }
 
 class Interns extends Component {
@@ -12,14 +15,18 @@ class Interns extends Component {
         super();
         this.state = {
             interns: [],
+            courses: [],
             isLoading: false,
             error: null,
             isAddModal: false,
+            isModal: false,
             activeInternID: null,
             deleteInternId: null,
+            selectedID: null,
         }
         this.handleIsOpenAddModal = this.handleIsOpenAddModal.bind(this);
         this.handleDeleteModal = this.handleDeleteModal.bind(this);
+        this.handleIsOpenCoursesModal = this.handleIsOpenCoursesModal.bind(this);
         this.fetchInterns = this.fetchInterns.bind(this);
     };
 
@@ -40,36 +47,58 @@ class Interns extends Component {
                 isLoading: false,
             })
         })
+        
     }
 
-    handleIsOpenAddModal (id) {
+    handleIsOpenAddModal (id = null) {
         this.setState({
             isAddModal: !this.state.isAddModal,
-            activeInternID: id ? id : null,
+            activeInternID: id,
         })
     }
 
-    handleDeleteModal (id) {
+    handleDeleteModal (id = null) {
         this.setState({
-            deleteInternId: id ? id : null,
+            deleteInternId: id,
+        })
+    }
+
+    handleIsOpenCoursesModal (id = null) {
+        this.setState({
+            isModal: !this.state.isModal,
+            selectedID: id,
         })
     }
 
     render () {
-        const {interns, isAddModal} = this.state;
+        const {interns, isAddModal, isModal, courses} = this.state;
         return (
             <div>
                 <button onClick={this.handleIsOpenAddModal}>Add Intern</button>
+                <button onClick={this.handleIsOpenCoursesModal} className="courses_btn">Courses</button>
                 <hr />
                 {isAddModal && (
                     <AddModal
+                        title="ADD_MODAL"
                         handleIsOpenAddModal={this.handleIsOpenAddModal}
                         intern={interns.find(intern => intern.id === this.state.activeInternID)}
                         fetchInterns={this.fetchInterns}
                     />
                 )}
+
+
+                {isModal && (
+                    <Modal
+                        handleIsOpenCoursesModal={this.handleIsOpenCoursesModal}
+                        course={courses.find(course => course.id === this.state.selectedID)}
+                    />
+                )}
+
+                
+
                 {!!this.state.deleteInternId && (
                     <DeleteModal
+                        title="DELETE_MODAL"
                         handleDeleteModal={this.handleDeleteModal}
                         intern={interns.find(intern => intern.id === this.state.deleteInternId)}
                         fetchInterns={this.fetchInterns}

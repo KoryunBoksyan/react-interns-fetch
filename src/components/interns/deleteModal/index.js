@@ -20,6 +20,7 @@ class DeleteModal extends Component {
         return (
             <div className="modal-container">
                 <div className="modal-content">
+                    <h2>{this.props.title}</h2>
                     <span className="close" onClick={() => this.props.handleDeleteModal()}>X</span>
                     <p>Are You sure delete {this.props.intern.firstName} ?</p>
                     <div className="btn-container">
